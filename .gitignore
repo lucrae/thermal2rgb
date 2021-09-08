@@ -1,2 +1,10 @@
-data/
 temp/
+venv/
+data/
+dataset/
+checkpoint/
+
+__pycache__/
+
+*.npy
+*.pyc
