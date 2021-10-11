@@ -14,12 +14,7 @@ from data import get_training_set, get_test_set
 
 
 # Custom
-<<<<<<< HEAD
 EPOCHS_PER_CHECKPOINT = 5
-=======
-EPOCHS_PER_CHECKPOINT = 1
->>>>>>> 6af543522ddc5fef55539dee4f4ba6bc23d59b9c
-
 
 # Training settings
 parser = argparse.ArgumentParser(description='pix2pix-pytorch-implementation')
