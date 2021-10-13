@@ -7,7 +7,7 @@ from PIL import Image
 
 
 def stitch_image_pairs(dir_a: Path, dir_b: Path, dir_save: Path):
-   
+
     for (path_a, path_b) in zip(dir_a.glob('*.jpg'), dir_b.glob('*.jpg')):
 
         print(f'Processing {path_a} & {path_b}...')
@@ -27,10 +27,10 @@ def stitch_image_pairs(dir_a: Path, dir_b: Path, dir_save: Path):
 
 if __name__ == '__main__':
 
-    DIR_ROOT = Path('../data/tufts_face_rgb_ir/test')
+    DIR_ROOT = Path('../data/tufts_face_rgb_ir_v2/train')
     DIR_A = DIR_ROOT / 'a'
     DIR_B = DIR_ROOT / 'b'
-    DIR_SAVE = Path('../data/tufts_face_rgb_ir_stitched/test')
+    DIR_SAVE = Path('../data/tufts_face_rgb_ir_v2_stitched/train')
 
     stitch_image_pairs(DIR_A, DIR_B, DIR_SAVE)
 
